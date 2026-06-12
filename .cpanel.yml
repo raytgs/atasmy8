@@ -1,0 +1,66 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/atasmy8/public_html/
+
+    # Main files
+    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R robots.txt $DEPLOYPATH
+    - /bin/cp -R sitemap.xml $DEPLOYPATH
+    - /bin/cp -R .htaccess $DEPLOYPATH
+
+    # Assets
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+
+    # Main pages
+    - /bin/cp -R atas-slots $DEPLOYPATH
+    - /bin/cp -R atas-live-casino $DEPLOYPATH
+    - /bin/cp -R atas-sports $DEPLOYPATH
+    - /bin/cp -R atas-4d $DEPLOYPATH
+    - /bin/cp -R atas-bonus $DEPLOYPATH
+    - /bin/cp -R atas-login $DEPLOYPATH
+    - /bin/cp -R atas-register $DEPLOYPATH
+    - /bin/cp -R atas-download $DEPLOYPATH
+    - /bin/cp -R blog $DEPLOYPATH
+
+    # Slot providers
+    - /bin/cp -R atas-askmeslot $DEPLOYPATH
+    - /bin/cp -R atas-lucky365 $DEPLOYPATH
+    - /bin/cp -R atas-pragmatic-play $DEPLOYPATH
+    - /bin/cp -R atas-microslot $DEPLOYPATH
+    - /bin/cp -R atas-monkey-king-slot $DEPLOYPATH
+    - /bin/cp -R atas-jili $DEPLOYPATH
+    - /bin/cp -R atas-jdb $DEPLOYPATH
+    - /bin/cp -R atas-kingmidas $DEPLOYPATH
+
+    # Live casino providers
+    - /bin/cp -R atas-evolution $DEPLOYPATH
+    - /bin/cp -R atas-sexy $DEPLOYPATH
+    - /bin/cp -R atas-hotroad $DEPLOYPATH
+    - /bin/cp -R atas-ezugi $DEPLOYPATH
+    - /bin/cp -R atas-db-casino $DEPLOYPATH
+    - /bin/cp -R atas-playtech $DEPLOYPATH
+    - /bin/cp -R atas-playace $DEPLOYPATH
+    - /bin/cp -R atas-big-gaming $DEPLOYPATH
+
+    # Sports providers
+    - /bin/cp -R atas-maxbet $DEPLOYPATH
+    - /bin/cp -R atas-9wickets $DEPLOYPATH
+
+    # Guide pages
+    - /bin/cp -R how-to-top-up $DEPLOYPATH
+    - /bin/cp -R how-to-withdraw $DEPLOYPATH
+    - /bin/cp -R real-name-authentication $DEPLOYPATH
+    - /bin/cp -R atas-qr-code $DEPLOYPATH
+    - /bin/cp -R atas-shareholder $DEPLOYPATH
+    - /bin/cp -R usdt-deposit $DEPLOYPATH
+    - /bin/cp -R usdt-withdraw $DEPLOYPATH
+
+    # Policy / information pages
+    - /bin/cp -R about-us $DEPLOYPATH
+    - /bin/cp -R contact-us $DEPLOYPATH
+    - /bin/cp -R terms-and-conditions $DEPLOYPATH
+    - /bin/cp -R privacy-policy $DEPLOYPATH
+    - /bin/cp -R responsible-gaming $DEPLOYPATH
